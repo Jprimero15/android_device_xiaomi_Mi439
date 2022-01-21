@@ -5,6 +5,9 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+# Board
+TARGET_BOARD_PLATFORM := msm8937
+
 # Cryptfshw
 TARGET_EXCLUDE_CRYPTFSHW := true
 
