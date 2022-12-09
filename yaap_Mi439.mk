@@ -11,8 +11,6 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 
 # Inherit some common LineageOS stuff.
 $(call inherit-product, vendor/yaap/config/common_full_phone.mk)
-scr_resolution := 720
-TARGET_BOOT_ANIMATION_RES := 720
 
 # Inherit from Mi439 device
 $(call inherit-product, device/xiaomi/Mi439/device.mk)
