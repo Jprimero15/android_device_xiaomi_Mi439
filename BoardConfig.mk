@@ -44,10 +44,18 @@ TARGET_RECOVERY_DEVICE_MODULES := init_xiaomi_mi439
 BOARD_BOOTIMG_HEADER_VERSION := 1
 BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOTIMG_HEADER_VERSION)
 BOARD_KERNEL_CMDLINE += androidboot.android_dt_dir=/non-existent androidboot.boot_devices=soc/7824900.sdhci
+BOARD_KERNEL_CMDLINE += oss.cam_hal=1 dynamic_partitions=1
 BOARD_KERNEL_SEPARATED_DTBO := true
 TARGET_KERNEL_ARCH := arm64
+TARGET_KERNEL_HEADER_ARCH := arm64
 TARGET_KERNEL_CONFIG := mi439-perf_defconfig
+TARGET_KERNEL_HEADERS := kernel/xiaomi/sdm439
 TARGET_KERNEL_SOURCE := kernel/xiaomi/sdm439
+
+# Prebuilt kernel
+TARGET_FORCE_PREBUILT_KERNEL := true
+BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)/prebuilt/dtbo.img
+TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/Image.gz-dtb
 
 # Partitions
 BOARD_BUILD_SYSTEM_ROOT_IMAGE := false
