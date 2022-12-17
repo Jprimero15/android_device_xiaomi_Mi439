@@ -47,7 +47,10 @@ BOARD_KERNEL_CMDLINE += androidboot.android_dt_dir=/non-existent androidboot.boo
 BOARD_KERNEL_SEPARATED_DTBO := true
 BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)/prebuilt/dtbo.img
 TARGET_KERNEL_ARCH := arm64
-TARGET_KERNEL_CONFIG := mi439-perf_defconfig
+TARGET_KERNEL_CONFIG := sdm439-perf_defconfig
+KERNEL_LLVM_SUPPORT := true
+KERNEL_CUSTOM_LLVM := true
+KERNEL_SD_LLVM_SUPPORT := false
 TARGET_KERNEL_SOURCE := kernel/xiaomi/sdm439
 
 # Partitions
