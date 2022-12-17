@@ -1,5 +1,6 @@
 #
 # Copyright (C) 2021 The LineageOS Project
+# Copyright (C) 2022 Paranoid Android
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -20,7 +21,9 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
 # Overlays
 PRODUCT_PACKAGES += \
     xiaomi_pine_overlay \
+    xiaomi_pine_overlay_lineage \
     xiaomi_olive_overlay \
+    xiaomi_olive_overlay_lineage \
     xiaomi_olive_overlay_Snap \
     xiaomi_olive_overlay_SystemUI
 
@@ -34,6 +37,9 @@ TARGET_SCREEN_WIDTH := 720
 PRODUCT_BUILD_SUPER_PARTITION := false
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 PRODUCT_RETROFIT_DYNAMIC_PARTITIONS := true
+
+# Shipping API
+PRODUCT_SHIPPING_API_LEVEL := 28
 
 # Permissions
 PRODUCT_COPY_FILES += \
