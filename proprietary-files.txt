@@ -3502,12 +3502,8 @@ vendor/lib64/libqtikeymaster4.so
 # Perf configs - from LA.UM.9.6.3.r1-06200-89xx.0 (4.9)
 vendor/etc/perf/commonresourceconfigs.xml
 vendor/etc/perf/commonsysnodesconfigs.xml
-vendor/etc/perf/perfboostsconfig.xml
-vendor/etc/perf/perfconfigstore.xml
 vendor/etc/perf/perf-profile0.conf
 vendor/etc/perf/perf-profile1.conf
-vendor/etc/perf/targetconfig.xml
-vendor/etc/perf/targetresourceconfigs.xml
 
 # Sensors
 vendor/bin/sensors.qti:vendor/bin/sensors.qti.pine
