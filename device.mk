@@ -8,6 +8,9 @@
 # Board
 TARGET_BOARD_PLATFORM := msm8937
 
+# Kernel
+TARGET_KERNEL_VERSION := 4.9
+
 # Cryptfshw
 TARGET_EXCLUDE_CRYPTFSHW := true
 
